@@ -5,13 +5,13 @@ networks:
 
 secrets:
   postgres_password:
-    file: ../secrets/postgres/postgres_password
+    file: secrets/postgres/postgres_password
   synapse_signing_key:
-    file: ../secrets/synapse/signing.key
+    file: secrets/synapse/signing.key
   livekit_api_key:
-    file: ../secrets/livekit/livekit_api_key
+    file: secrets/livekit/livekit_api_key
   livekit_secret_key:
-    file: ../secrets/livekit/livekit_secret_key
+    file: secrets/livekit/livekit_secret_key
 
 services:
   # XXX: consider factor out secret generation from the compose.yml

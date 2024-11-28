@@ -63,10 +63,6 @@ services:
   nginx:
     image: nginx:latest
     restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-      - "8448:8448"
     # shutdown fast so we can iterate rapidly on compose.yml
     stop_grace_period: 0s
     volumes:
